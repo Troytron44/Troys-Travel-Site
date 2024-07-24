@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+   <style>
+       .navbar a {
+            color: rgba(255,246,246,1.0);
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        .navbar a::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: rgba(151,96,26,1.00);
+            transition: width 0.3s ease, left 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+  .navbar a:hover {
+    color: rgba(151,96,26,1.00); 
+        }
+      
+  .navbar {
+    display: flex;
+    width: auto;/*might need to remove this*/
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(6,217,187,0.67);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+ 
+  .navbar-right {
+    display: flex;
+    width: auto;/*might need to remove this*/
+  }
+  
+
+  .brand-title {
+    font-size: 1.8em;
+    margin:2px;
+    width: auto;/*might need to remove this*/
+    height: 35px;
+    border-right:1px solid white; padding-right: 5px;
+}
+           body {
+        background-color:rgba(51,7,183,0.75); 
+        font-family: "Pathway Gothic One", sans-serif;
+        font-style: normal;
+        font-color:white;           
+            }
+     * {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:rgba(23,192,182,0.93);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #838980;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color:rgba(111,157,193,0.40);
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding-left: px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+   </style>
+<meta charset="utf-8">
+<title>Contact</title>
+</head>
+
+<body>
+        <div class="navbar">
+  <div class="brand-title">Troy's Travels</div>
+  <div class="navbar-right">
+    <a href="#home">Home</a>
+    <a href="#destination">Destination</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+<div class="container">
+  <div style="text-align:center">
+    <h2 style="color:white">Contact Us</h2>
+    <p style="color:white">Please feel free to share your stories or leave us a message, we'd love to hear from you!</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="Troys-Travel-Site/disney.jpg" style="width:70%" alt="family-disney">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email address..">
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Share thoughts and experiences.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

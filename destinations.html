@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+     <style>
+         .navbar a {
+            color: rgba(255,246,246,1.00);
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        .navbar a::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: rgba(151,96,26,1.00);
+            transition: width 0.3s ease, left 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+  .navbar a:hover {
+    color: rgba(151,96,26,1.00); 
+        }
+      
+  .navbar {
+    display: flex;
+    width: auto;/*might need to remove this*/
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(6,217,187,0.67);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+ 
+  .navbar-right {
+    display: flex;
+    width: auto;/*might need to remove this*/
+  }
+  
+
+  .brand-title {
+    font-size: 1.8em;
+    margin:2px;
+    width: auto;/*might need to remove this*/
+    height: 35px;
+    border-right:1px solid white; padding-right: 5px;
+}
+             body {
+        /*might need to rmove the perventage if this doesntwork*/
+        background-size:cover;
+        background-repeat: no-repeat;
+        /*font-family:"pathway-gothic-one-regular";*/ 
+        font-family: "Pathway Gothic One", sans-serif;
+        font-style: normal;
+            }
+     </style>
+<meta charset="utf-8">
+<title>Destinations</title>
+</head>
+
+<body>
+        <div class="navbar">
+  <div class="brand-title">Troy's Travels</div>
+  <div class="navbar-right">
+    <a href="#home">Home</a>
+    <a href="#destination">Destination</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+</body>
+</html>

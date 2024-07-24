@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <style>
+        .navbar a {
+            color: rgba(255,246,246,1.00);
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        .navbar a::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: rgba(151,96,26,1.00);
+            transition: width 0.3s ease, left 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+  .navbar a:hover {
+    color: rgba(151,96,26,1.00); 
+        }
+      
+  .navbar {
+    display: flex;
+    width: auto;/*might need to remove this*/
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(6,217,187,0.67);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+ 
+  .navbar-right {
+    display: flex;
+    width: auto;/*might need to remove this*/
+  }
+  
+
+  .brand-title {
+    font-size: 1.8em;
+    margin:2px;
+    width: auto;/*might need to remove this*/
+    height: 35px;
+    border-right:1px solid white; padding-right: 5px;
+}
+            body {
+        background-color:rgba(51,7,183,0.75);
+        /*might need to rmove the perventage if this doesntwork*/
+        background-size:cover;
+        background-repeat: no-repeat;
+        /*font-family:"pathway-gothic-one-regular";*/ 
+        font-family: "Pathway Gothic One", sans-serif;
+        font-style: normal;
+            }
+        .content {
+  max-width: 1050px; /* Adjust as needed */
+  margin: auto;
+  padding: 5px;
+}
+
+/* Container for the image and text overlay */
+.image-container {
+  position: relative;
+}
+
+/* Ensure the image fits inside the container */
+.image-container img {
+  width: 45%;
+  display: block;
+  float: left;
+  margin-bottom: px;
+
+}
+
+/* Styling for the text overlay */
+.text-over-image {
+    float: right;
+  width: 45%;
+  color: white; /* Choose text color that contrasts well with your image */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the text */
+  padding:30px;
+  font-size: 27px;
+  height:auto;
+}
+        h2{
+            
+            text-align: center;
+            color: white;
+        }
+        .picture-box-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px; /* Adjust as needed */
+}
+
+.picture-box {
+  width: 40%; /* Adjust the width as needed */
+  padding: 3px;
+}
+
+.picture-box img {
+  width: 100%;
+  height: 55%;
+  display: block;
+}
+    
+    </style>
+<meta charset="utf-8">
+<title>About</title>
+</head>
+
+<body>
+    <div class="navbar">
+  <div class="brand-title">Troy's Travels</div>
+  <div class="navbar-right">
+    <a href="#home">Home</a>
+    <a href="#destination">Destination</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>     
+</div>
+    <div class="content">
+  <h2>About</h2>
+  <div class="image-container">
+    <img src="Troys-Travel-Site/family.jpg" alt="family-pic">
+    <div class="text-over-image">
+        <div class="picture-box-container">
+  <div class="picture-box">
+    <img src="Troys-Travel-Site/IMG_6699.jpg" alt="fam-pics">
+  </div>
+  <div class="picture-box">
+    <img src="Troys-Travel-Site/60ab4edc-0222-4b0b-a581-a2b65af88965.jpg" alt="fam-pics-2">
+  </div>
+  <div class="picture-box">
+    <img src="Troys-Travel-Site/IMG_4893.jpg" alt="fam-pic-3">
+  </div>
+</div>
+        Hello! My name is Troy and this is my family. We enjoy traveling and have made it an effort and a commitment to get out and see new things together. We wanted to share some of our trips and adventures with you. Traveling with a little one can have its challenges but it's not impossible! Some of the places we have visited are extremely fun for families. From the Corpus Christi Beach, to Disney World in Florida, and all the way to Brazil! We found that as long as you have a plan and give yourself time, it can be stress free. We enjoy sharing and hopefully, our experiences inspire you to get out and make memories as a family!
+      </div>
+  </div>
+</div>
+</body>
+</html>
