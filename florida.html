@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forida</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+     <style>
+         .navbar a {
+            color: rgba(255,246,246,1.00);
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        .navbar a::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: rgba(151,96,26,1.00);
+            transition: width 0.3s ease, left 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+  .navbar a:hover {
+    color: rgba(151,96,26,1.00); 
+        }
+      
+  .navbar {
+    display: flex;
+    width: auto;/*might need to remove this*/
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(6,217,187,0.67);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+ 
+  .navbar-right {
+    display: flex;
+    width: auto;/*might need to remove this*/
+  }
+  
+
+  .brand-title {
+    font-size: 1.8em;
+    margin:2px;
+    width: auto;/*might need to remove this*/
+    height: 35px;
+    border-right:1px solid white; padding-right: 5px;
+}
+             body {
+        background-color: rgba(48,42,180,0.80);
+        background-size:cover;
+        background-repeat: no-repeat;
+        /*font-family:"pathway-gothic-one-regular";*/ 
+        font-family: "Pathway Gothic One", sans-serif;
+        font-style: normal;
+            }
+         h1{
+             color: white;
+             padding-left: 0px;
+             
+         }
+         h2{
+             color:orange;
+             padding-left:0px;
+             font-size: 29px;
+         }
+         h3{
+             color:orange;
+         }
+         p{
+             color: white;
+             font-size: 20px;
+         }
+         .main-img{
+             max-width: 70%;
+         }
+          .img-size{
+  width: 850px; /* Fixed width */
+  height: 550px; /* Fixed height */
+  object-fit: cover; 
+  border: medium white solid;
+}
+
+.main-img, .img2, .img3, .img4, .img5 {
+  max-width: 100%; 
+}
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="brand-title"><a href="index.html">Troy's Travels</a></div>
+  <div class="navbar-right">
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destination</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+       <h1>Destinations</h1>
+    <hr>
+    <h2>Florida</h2>
+    <div class="flex-container">
+       <div class="main-text">
+           <p>About florida for us!</p>
+        </div>
+    </div>
+        <hr>  
+    <div class="location1">
+        <h2>Magic Kingdom Park - Bay Lake, Florida</h2>    
+        <img src="disney2.jpg" alt="Magic-kingdom" class="main-img img-size">
+        <p> Info about this place and our experience</p>
+    </div>
+    <hr>
+    <div class="location2">
+        <h2>Peppa Pig Theme Park - Florida</h2>    
+        <img src="IMG_5116.jpg" alt="peppa-pig-theme" class="img2 img-size">
+        <p> Info about this place and our experience</p>
+    </div>
+    <hr>
+    <div class="location3">
+        <h2>Wizzarding World - Harry Potter - Orlando, FL</h2>    
+        <img src="IMG_6914.jpg" alt="harry-potter-themepark" class="img3 img-size">
+        <p> Info about this place and our experience</p>
+    </div>
+    <hr>
+    <div class="location4">
+        <h2>Universal - City Walk - Orlando,FL</h2>    
+        <img src="city-walk.jpg" alt="Hamilton-pool" class="img4 img-size">
+        <p> Info about this place and our experience</p>
+    </div>
+  
+  
+</body>
+</html>

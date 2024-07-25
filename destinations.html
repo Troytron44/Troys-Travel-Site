@@ -67,6 +67,52 @@
         font-family: "Pathway Gothic One", sans-serif;
         font-style: normal;
             }
+         .image-container {
+    display: flex;
+    flex-wrap:wrap; /* Allows items to wrap onto the next line */
+    gap: 10px;
+    float: right; /* Floats the image container to the right */
+    width: 50%;/* Adjust the space between images */
+}
+
+.image-container img {
+    flex: 1 1 auto; /* Allows the image to grow and shrink */
+    margin-top:18px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+     height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image covers the area without stretching */
+    border: 3px solid #000; /* Ensures the image covers the area without stretching */
+}
+         .main-text{ 
+    float: left; /* Floats the text container to the left */
+    width: 45%; /* Adjust the width as needed */
+    padding-left: 20px;
+    color: white;
+    font-size: 24px;
+         }
+         .image-container .large-img {
+    width:40px;
+    object-fit: cover;  
+}
+
+.image-container .med-img {
+    width: 35%;
+}
+
+.image-container .small-img {
+    width: 30%;
+    object-fit: fill;
+}
+         h2{
+             color:orange;
+             padding-left:20px;
+             font-size: 29px;
+         }
+         h3{
+             color:orange;
+         }
+             
      </style>
 <meta charset="utf-8">
 <title>Destinations</title>
@@ -82,5 +128,29 @@
     <a href="contact.html">Contact</a>
   </div>
 </div>
+    <h2>Destinations</h2>
+    <div class="flex-container">
+       <div class="main-text">
+           <p>While living in Texas, we have traveled throughout, and really enjoy the beach, and olther local gems, like rivers and lakes! We also enjoy traveling to Florida to visit attractions like Disney World, Uuniversal, as well as the free areas like Disney Springs. Due to having family in Brazil, we try and make an effort to visit every two years. Fortaleza Brazil is a go to place for families looking to have a good time enjoy the beach.</p>
+        <hr>
+           <h3> Texas</h3>
+           <p> Living in South Texas we are surrounded by attractions, from Comal River in New Braunfels, to Sea World in NW San Antonio. We can't forget the Alamo! The River Walk is an amazing place to get out and discover with restaurants all along the river, and nice Hotels overlooking it! If you are a sports fan you can always cheer on one of the many pro sports teams, I prefer the Dallas Cowboys, and the stadium is massive! Further south we like to visit Corpus Christi and the beaches, not to mention getting a good and relaxing walk on the bayfront! </p>
+           <hr>
+           <h3>Florida</h3>
+           <p>Florida is such an awesome place to visit and vacation due to the many them parks and nice beaches. We truly love (when we can) visiting Orlando, Fl. There we catch the fireworks at Magic Kingdom, Disney World. We swing by the free event at Disney Springs, where you can eat, hear music, and catch various entertainers performing all along the boardwalk. We enjoy the rides at Unversal Orlando, the Mummy ride is amazing! Florida is also where we catch a connecting flight to Brazil!</p>
+           <hr>
+           <h3>Brazil</h3>
+           <p> What can we say about Brazil but that we love to visit, even though it's not too often. We visit places like Fortaleza, which is located in NE Brazil, and Sao Paulo which is more to the south. They are completely different as one is a busy and huge city like New York, where the other is more like Miami, but with Orlando vibes (more family oriented). The beaches all along coast are nice and clean, and there are usually vendors selling fresh cold coco water. Our favorite places to stay is along the Beira-Mar (or bayfront). There you can let the kid play at one of the playgrounds, while having some amazing food and a caipirinha, a Brazilian cocktail. The views are beautiful and the food is really good. There are plenty of attractions for families to enjoy </p>
+        </div>
+        <div class="image-container">   
+        <img src="IMG_4634.jpg" alt="art-fortaleza" class="small-img">
+        <img src="IMG_5037.jpg" alt="coffee-brazil" class="med-img">
+        <img src="IMG_6976.jpg" alt="city-walk" class="small-img">
+        <img src="30A9A503-84C5-4109-8A88-589BC49DBEA2.jpg" alt="coconut" class="med-img">
+        <img src="IMG_4662.jpg" alt="beach-fortaleza" class="med-img">
+        <img src="IMG_8397.jpg" alt="shark-beach" class="large-img">
+        </div>
+     </div>
+    
 </body>
 </html>
