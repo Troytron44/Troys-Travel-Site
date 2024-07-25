@@ -7,6 +7,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
      <style>
+       .dropbtn {
+    overflow: hidden;
+    cursor: pointer;
+    padding-top: 5px;
+}
+    .dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 115px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+   .dropdown-content a {
+    color: black;
+    padding: 1px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+    .dropdown-content a:hover {background-color:rgba(222,207,169,0.64)}
+    .dropdown:hover .dropdown-content {
+    display: block;
+}
+    .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+        }
+          * {
+        box-sizing: border-box;
+          }
          .navbar a {
             color: rgba(255,246,246,1.00);
             padding: 14px 16px;
@@ -107,7 +137,14 @@
         <div class="brand-title"><a href="index.html">Troy's Travels</a></div>
   <div class="navbar-right">
     <a href="index.html">Home</a>
-    <a href="destinations.html">Destination</a>
+      <div class="dropdown">
+            <a href="destinations.html" class="dropbtn">Destinations</a>
+            <div class="dropdown-content">
+                <a href="texas.html">Texas</a>
+                <a href="florida.html">Florida</a>
+                <a href="brazil.html">Brazil</a>
+            </div>
+        </div>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </div>
